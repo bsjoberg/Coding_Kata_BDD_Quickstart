@@ -16,5 +16,10 @@ public class AnagramTest {
         assertFalse(Anagram.isAnagram("b", "a"));
     }
 
+    @Test
+    public void testThreeLetterWordIsAnagram() {
+        assertTrue(Anagram.isAnagram("are", "era"));
+    }
+
     // Test with spaces
 }
