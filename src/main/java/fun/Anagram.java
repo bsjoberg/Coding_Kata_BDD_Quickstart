@@ -5,14 +5,15 @@ import java.util.Arrays;
 
 public class Anagram {
     public static boolean isAnagram(String subject, String anagram) {
-        char[] tempArray = subject.toCharArray();
-        Arrays.sort(tempArray);
-        String subjectSorted = new String(tempArray);
-
-        tempArray = anagram.toCharArray();
-        Arrays.sort(tempArray);
-        String anagramSorted = new String(tempArray);
+        String subjectSorted = sortString(subject);
+        String anagramSorted = sortString(anagram);
 
         return subjectSorted.equals(anagramSorted);
+    }
+
+    private static String sortString(String subject) {
+        char[] tempArray = subject.toCharArray();
+        Arrays.sort(tempArray);
+        return new String(tempArray);
     }
 }
