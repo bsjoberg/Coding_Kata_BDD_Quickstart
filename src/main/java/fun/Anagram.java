@@ -5,6 +5,9 @@ import java.util.Arrays;
 
 public class Anagram {
     public static boolean isAnagram(String subject, String anagram) {
+        if(subject.length() != anagram.length())
+            return false;
+
         String subjectSorted = sortString(subject);
         String anagramSorted = sortString(anagram);
 

@@ -22,6 +22,12 @@ public class AnagramTest {
     }
 
     // Test different length words not being anagrams
+    @Test
+    public void testDifferentLengthsNotAnagram() {
+        assertFalse(Anagram.isAnagram("ab", "a"));
+    }
+
+    // Test handle case insensitive.
 
     // Test with spaces
 }
