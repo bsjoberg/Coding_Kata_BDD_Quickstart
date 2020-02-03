@@ -1,9 +1,10 @@
 package fun;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Anagram {
+    private Anagram() {}
+
     public static boolean isAnagram(String subject, String anagram) {
         if(subject.length() != anagram.length())
             return false;
