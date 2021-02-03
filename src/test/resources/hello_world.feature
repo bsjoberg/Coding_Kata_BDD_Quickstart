@@ -1,4 +1,4 @@
-Feature: Development environment is working
+Feature: Environment is working
   Scenario: Hello World application says hi
     Given Hello World exists
     When I say hi
